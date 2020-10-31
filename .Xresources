@@ -1,0 +1,47 @@
+! *fading: 35
+! *fadeColor: nord3
+
+*.background:            #161a21
+*.foreground:            #bbc1c9
+*.cursorColor:           #ff6900
+*.highlightTextColor:    #f0ede4
+*.color0:                #000000
+*.color8:                #5e5e5e
+! purple:
+*.color1:                #ff6565
+! light: red
+*.color9:                #ff6565
+*.#blue:
+*.color2:                #86b200
+*.color10:               #b8e532
+*.color3:                #f19618
+*.color11:               #ffc849
+*.color4:                #1e88e5
+*.color12:               #73d7ff
+*.color5:                #f07078
+*.color13:               #ffa3aa
+*.color6:                #4cbe99
+*.color14:               #7ff0cb
+*.color7:                #ffffff
+*.color15:               #ffffff
+
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.font: xft:UbuntuMono Nerd Font:size=12
+URxvt.scrollBar: false
+URxvt.saveLines: 100000
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.letterSpace: -1
+Xft.dpi: 120
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+ 
