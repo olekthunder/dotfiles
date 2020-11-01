@@ -1,0 +1,28 @@
+[user]
+	email = zso040399@gmail.com
+	name = Oleksandr Zinkevych
+	signingkey = 4CB9165672409FAF
+[core]
+	excludesfile = /home/olekthunder/.gitignore.global
+	editor = nvim
+[diff]
+        tool = pycharm
+[difftool "pycharm"]
+        cmd = /usr/local/bin/pycharm diff "$LOCAL" "$REMOTE" && echo "Press enter to continue..." && read
+[merge]
+        tool = pycharm
+[mergetool "pycharm"]
+        cmd = /usr/local/bin/pycharm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+        keepBackup = false
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+
+[includeIf "gitdir/i:~/git-repos/work/"]
+    path = ~/git-repos/work/.gitconfig
+
+[pull]
+	ff = only
+[alias]
+	stash = stash -u
