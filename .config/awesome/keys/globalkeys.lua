@@ -297,7 +297,7 @@ local globalkeys =
         {},
         "XF86AudioLowerVolume",
         function()
-            awful.spawn("pactl set-sink-volume 0 -5%", false)
+            awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%", false)
         end,
         {description = "Decrease volume", group = "Extra"}
     ),
@@ -305,7 +305,7 @@ local globalkeys =
         {},
         "XF86AudioRaiseVolume",
         function()
-            awful.spawn("pactl set-sink-volume 0 +5%", false)
+            awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%", false)
         end,
         {description = "Increase volume", group = "Extra"}
     ),
