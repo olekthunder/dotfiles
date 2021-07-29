@@ -5,7 +5,7 @@ local awful = require("awful")
 local apps = {}
 
 apps.file_browser = "ranger"
-apps.terminal = "urxvt"
+apps.terminal = "alacritty"
 apps.editor = os.getenv("EDITOR") or "vim"
 
 apps.run_in_terminal = function (command)

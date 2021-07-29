@@ -45,7 +45,7 @@ local rules = {
         },
         properties = {
             tag = tags.tagnames.code_tag,
-            switchtotag = true
+            switchtotag = false
         }
     },
     -- Move all browsers to tag `tags.tagnames.browser_tag`
@@ -59,7 +59,7 @@ local rules = {
         },
         properties = {
             tag = tags.tagnames.browser_tag,
-            switchtotag = true
+            switchtotag = false
         }
     },
     -- Move messengers to `tags.tagnames.messenger_tag`
@@ -77,7 +77,7 @@ local rules = {
         },
         properties = {
             tag = tags.tagnames.messenger_tag,
-            switchtotag = true
+            switchtotag = false
         }
     },
     {
@@ -90,7 +90,7 @@ local rules = {
         },
         properties = {
             tag = tags.tagnames.games_tag,
-            switchtotag = true,
+            switchtotag = false,
             border_width = 0,
             floating = true
         }

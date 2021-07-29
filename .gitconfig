@@ -26,3 +26,5 @@
 	ff = only
 [alias]
 	stash = stash -u
+[init]
+	defaultBranch = master
