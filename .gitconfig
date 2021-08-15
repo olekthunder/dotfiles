@@ -1,7 +1,7 @@
 [user]
 	email = zso040399@gmail.com
 	name = Oleksandr Zinkevych
-	signingkey = 4CB9165672409FAF
+	signingkey = 3BAF55A7B5844709
 [core]
 	excludesfile = /home/olekthunder/.gitignore.global
 	editor = nvim
