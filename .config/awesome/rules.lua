@@ -53,7 +53,7 @@ local rules = {
         rule_any = {
             class = {
                 "Google-chrome",
-                "firefox",
+                "Firefox",
                 "Brave-browser"
             }
         },
