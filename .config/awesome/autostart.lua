@@ -2,7 +2,8 @@ local runonce = require("utils.runonce")
 
 local function setup_auto_start()
 	-- Keyboard layouts
-	-- runonce.run("setxkbmap -option grp:win_space_toggle -layout us,ru,ua")
+	runonce.run("setxkbmap -option grp:win_space_toggle -layout us,ru,ua")
+	runonce.run("~/.local/bin/xidlescreenlock")
 	-- Compositor
 	-- runonce.run("picom -b")
 	-- runonce.run("xsettingsd")

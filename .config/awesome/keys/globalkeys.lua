@@ -272,7 +272,7 @@ local globalkeys =
         {},
         "XF86MonBrightnessDown",
         function()
-            awful.spawn("light -U 10", false)
+            awful.spawn("xbacklight -dec 10", false)
         end,
         {description = "Brightness down", group = "Extra"}
     ),
@@ -280,7 +280,7 @@ local globalkeys =
         {},
         "XF86MonBrightnessUp",
         function()
-            awful.spawn("light -A 10", false)
+            awful.spawn("xbacklight -inc 10", false)
         end,
         {description = "Brightness up", group = "Extra"}
     ),
@@ -334,7 +334,7 @@ local globalkeys =
         {keynames.modkey},
         "l",
         function()
-            awful.spawn("dm-tool lock")
+            awful.util.spawn_with_shell("~/.local/bin/lockscreen")
         end,
         {description = "Lock the screen", group = "Extra"}
     ),

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+SCREEN_LOCK_TIMER_ID=1
+
+xidlehook-client --socket /tmp/xidlehook.socket reset-idle
+xidlehook-client --socket /tmp/xidlehook.socket control --action trigger --timer $SCREEN_LOCK_TIMER_ID
