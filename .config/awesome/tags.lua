@@ -52,7 +52,7 @@ local function init_tags(s)
     awful.tag.add(
         tagnames.games_tag,
         {
-            layout = layouts.fullscreen,
+            layout = layouts.tile,
             screen = s,
         }
     )
