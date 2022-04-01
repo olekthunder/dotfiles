@@ -13,7 +13,7 @@ local config_dir = gfs.get_configuration_dir()
 local theme = {}
 
 theme.font = "Roboto 9"
-theme.taglist_font = theme.font
+theme.taglist_font = "Font Awesome 6 Free"
 
 -- local function opaque(color, opacity)
 --     if string.len(color) ~= 7 then

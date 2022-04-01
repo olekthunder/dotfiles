@@ -15,4 +15,7 @@ setopt NO_NOMATCH
 path+=("$HOME/.local/bin")
 eval "$(starship init zsh)"
 fpath=("$ZDOTDIR/completions/src" $fpath)
-
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+export GPG_TTY=$(tty)

@@ -289,7 +289,7 @@ local globalkeys =
         {},
         "XF86AudioMute",
         function()
-            awful.spawn("pamixer -t", false)
+            awful.spawn("amixer set Master toggle", false)
         end,
         {description = "Mute volume", group = "Extra"}
     ),
@@ -297,7 +297,7 @@ local globalkeys =
         {},
         "XF86AudioLowerVolume",
         function()
-            awful.spawn("pamixer -d 5", false)
+            awful.spawn("amixer set Master 5%-", false)
         end,
         {description = "Decrease volume", group = "Extra"}
     ),
@@ -305,7 +305,7 @@ local globalkeys =
         {},
         "XF86AudioRaiseVolume",
         function()
-            awful.spawn("pamixer -i 5", false)
+            awful.spawn("amixer set Master 5%+", false)
         end,
         {description = "Increase volume", group = "Extra"}
     ),
