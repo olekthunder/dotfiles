@@ -2,5 +2,7 @@ env:
   WINIT_X11_SCALE_FACTOR: '1.0'
 font:
   normal:
-    family: Roboto Mono
+    family: Roboto Mono Nerd Font
   size: 14
+key_bindings:
+  - { key: F, mods: Control|Shift, action: ReceiveChar }

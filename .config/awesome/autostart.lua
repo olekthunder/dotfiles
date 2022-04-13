@@ -5,7 +5,7 @@ local function setup_auto_start()
 	runonce.run("setxkbmap -option grp:win_space_toggle -layout us,ru,ua")
 	runonce.run("~/.local/bin/xidlescreenlock")
 	-- Compositor
-	-- runonce.run("picom -b")
+	runonce.run("picom")
 	-- runonce.run("xsettingsd")
 	-- runonce.run("lxqt-policykit-agent")
 end

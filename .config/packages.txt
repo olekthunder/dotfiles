@@ -1,118 +1,135 @@
-acpi
-adriconf
-alacritty
-alsa-utils
-autoconf
-automake
-awesome
-base
-betterlockscreen
-bind
-bison
-chromium
-code
-firefox
-flex
-gcc
-htop
-iwd
-keepassxc
-lets-git
-libtool
-linux-firmware
-linux-lts
-m4
-maim
-make
-nautilus
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-ntfs-3g
-openssh
-openvpn
-openvpn-update-systemd-resolved
-pacman-contrib
-paru
-patch
-pavucontrol
-picom
-pipewire
-pipewire-alsa
-pipewire-pulse
-pkgconf
-ranger
-rofi
-rxvt-unicode
-slack-desktop
-smplayer
-smplayer-themes
-starship
-sudo
-syncthing
-telegram-desktop
-texinfo
-throttled
-ttf-fira-code
-ttf-font-awesome
-ttf-opensans
-ttf-roboto
-ttf-roboto-mono
-veracrypt
-vim
-which
-xclip
-xf86-video-intel
-xf86-video-vesa
-xidlehook
-xorg-bdftopcf
-xorg-docs
-xorg-font-util
-xorg-fonts-100dpi
-xorg-fonts-75dpi
-xorg-fonts-encodings
-xorg-iceauth
-xorg-mkfontscale
-xorg-server
-xorg-server-common
-xorg-server-devel
-xorg-server-xephyr
-xorg-server-xnest
-xorg-server-xvfb
-xorg-sessreg
-xorg-setxkbmap
-xorg-smproxy
-xorg-twm
-xorg-x11perf
-xorg-xauth
-xorg-xbacklight
-xorg-xcmsdb
-xorg-xcursorgen
-xorg-xdpyinfo
-xorg-xdriinfo
-xorg-xev
-xorg-xgamma
-xorg-xhost
-xorg-xinit
-xorg-xinput
-xorg-xkbcomp
-xorg-xkbevd
-xorg-xkbutils
-xorg-xkill
-xorg-xlsatoms
-xorg-xlsclients
-xorg-xmodmap
-xorg-xpr
-xorg-xprop
-xorg-xrandr
-xorg-xrdb
-xorg-xrefresh
-xorg-xset
-xorg-xsetroot
-xorg-xvinfo
-xorg-xwayland
-xorg-xwd
-xorg-xwininfo
-xorg-xwud
-yadm
-zsh
+acpi 1.7-3
+adriconf 2.5.0-1
+alacritty 0.10.1-1
+alsa-utils 1.2.6-1
+autoconf 2.71-1
+automake 1.16.5-1
+awesome 4.3-3
+base 2-2
+betterlockscreen 4.0.3-2
+bind 9.18.1-1
+bison 3.8.2-3
+chromium 100.0.4896.75-1
+code 1.66.0-2
+dconf-editor 3.38.3-1
+firefox 99.0-1
+flex 2.6.4-3
+gcc 11.2.0-4
+git-delta 0.12.1-1
+htop 3.1.2-1
+inetutils 2.2-1
+iwd 1.26-1
+keepassxc 2.7.1-1
+kubectl 1.23.5-1
+lets-git v0.0.45.r2.ge5f79b6-1
+libtool 2.4.7-1
+linux-firmware 20220309.cd01f85-1
+linux-lts 5.15.32-1
+m4 1.4.19-1
+maim 5.7.4-2
+make 4.3-3
+nautilus 42.0+r7+gca3702e9b-1
+nautilus-open-any-terminal 0.2.16-1
+neovim 0.6.1-2
+nerd-fonts-roboto-mono 2.1.0-2
+nmap 7.92-1
+nodejs 17.8.0-1
+noto-fonts 20201226-2
+noto-fonts-cjk 20220126-1
+noto-fonts-emoji 20211101-1
+npm 8.5.5-1
+ntfs-3g 2021.8.22-1
+openssh 8.9p1-1
+openvpn 2.5.6-1
+openvpn-update-systemd-resolved 1.3.0-4
+pacman-contrib 1.4.0-4
+paru 1.10.0-1
+patch 2.7.6-8
+pavucontrol 1:5.0-1
+picom 9.1-2
+pipewire 1:0.3.49-1
+pipewire-alsa 1:0.3.49-1
+pipewire-pulse 1:0.3.49-1
+pkgconf 1.8.0-1
+postgresql 13.6-1
+ranger 1.9.3-4
+rofi 1.7.3-1
+rust 1:1.60.0-1
+rust-src 1:1.60.0-1
+rxvt-unicode 9.26-2
+slack-desktop 4.24.1-1
+smplayer 22.2.0-1
+smplayer-themes 1:20.11.0-1
+starship 1.5.4-1
+sudo 1.9.10-1
+syncthing 1.19.2-1
+systemd-resolvconf 250.4-2
+telegram-desktop 3.6.1-1
+texinfo 6.8-2
+throttled 0.9.2-2
+traceroute 2.1.0-5
+ttf-fira-code 6.2-1
+ttf-font-awesome 6.1.1-1
+ttf-opensans 1.101-2
+ttf-roboto 2.138-4
+ttf-roboto-mono 3.000-1
+veracrypt 1.25.9-1
+vim 8.2.4651-1
+which 2.21-5
+windscribe-v2-bin 2.3.15_beta-4
+wireguard-tools 1.0.20210914-1
+xclip 0.13-3
+xf86-video-intel 1:2.99.917+916+g31486f40-2
+xf86-video-vesa 2.5.0-2
+xidlehook 0.10.0-1
+xorg-bdftopcf 1.1-2
+xorg-docs 1.7.2-1
+xorg-font-util 1.3.2-2
+xorg-fonts-100dpi 1.0.3-7
+xorg-fonts-75dpi 1.0.3-7
+xorg-fonts-encodings 1.0.5-2
+xorg-iceauth 1.0.9-1
+xorg-mkfontscale 1.2.2-1
+xorg-server 21.1.3-6
+xorg-server-common 21.1.3-6
+xorg-server-devel 21.1.3-6
+xorg-server-xephyr 21.1.3-6
+xorg-server-xnest 21.1.3-6
+xorg-server-xvfb 21.1.3-6
+xorg-sessreg 1.1.2-2
+xorg-setxkbmap 1.3.3-1
+xorg-smproxy 1.0.6-3
+xorg-twm 1.0.12-1
+xorg-x11perf 1.6.1-2
+xorg-xauth 1.1.1-1
+xorg-xbacklight 1.2.3-2
+xorg-xcmsdb 1.0.5-3
+xorg-xcursorgen 1.0.7-2
+xorg-xdpyinfo 1.3.2-4
+xorg-xdriinfo 1.0.6-2
+xorg-xev 1.2.4-1
+xorg-xgamma 1.0.6-3
+xorg-xhost 1.0.8-2
+xorg-xinit 1.4.1-3
+xorg-xinput 1.6.3-2
+xorg-xkbcomp 1.4.5-1
+xorg-xkbevd 1.1.4-3
+xorg-xkbutils 1.0.4-4
+xorg-xkill 1.0.5-2
+xorg-xlsatoms 1.1.3-2
+xorg-xlsclients 1.1.4-2
+xorg-xmodmap 1.0.10-2
+xorg-xpr 1.0.5-2
+xorg-xprop 1.2.5-1
+xorg-xrandr 1.5.1-2
+xorg-xrdb 1.2.1-1
+xorg-xrefresh 1.0.6-2
+xorg-xset 1.2.4-2
+xorg-xsetroot 1.1.2-2
+xorg-xvinfo 1.1.4-2
+xorg-xwayland 22.1.1-1
+xorg-xwd 1.0.8-1
+xorg-xwininfo 1.1.5-2
+xorg-xwud 1.0.5-2
+yadm 3.2.0-1
+zsh 5.8.1-1

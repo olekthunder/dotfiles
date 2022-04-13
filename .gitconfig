@@ -5,15 +5,15 @@
 [core]
 	excludesfile = /home/olekthunder/.gitignore.global
 	editor = nvim
-[diff]
-        tool = pycharm
-[difftool "pycharm"]
-        cmd = /usr/local/bin/pycharm diff "$LOCAL" "$REMOTE" && echo "Press enter to continue..." && read
+        pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
 [merge]
-        tool = pycharm
-[mergetool "pycharm"]
-        cmd = /usr/local/bin/pycharm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
-        keepBackup = false
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [commit]

@@ -19,3 +19,4 @@ bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 export GPG_TTY=$(tty)
+alias vim="nvim"
