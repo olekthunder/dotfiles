@@ -38,8 +38,12 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+-- nvim-cmp supports additional completion capabilities
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 lsp_installer.on_server_ready(function(server)
-    local opts = { on_attach = on_attach }
+    local opts = { on_attach = on_attach, capabilities = capabilities }
 
     if server.name == "rust_analyzer" then
         -- Initialize the LSP via rust-tools instead

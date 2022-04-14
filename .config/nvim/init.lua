@@ -2,11 +2,14 @@ local nnoremap = require('utils').nnoremap
 
 
 require('packer').startup(function(use)
-    use 'projekt0n/github-nvim-theme'
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function() require('lualine').setup() end,
+    }
+    use {
+        'projekt0n/github-nvim-theme',
+         config = function() require('github-theme').setup() end,
     }
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     use 'nvim-treesitter/nvim-treesitter'
@@ -18,13 +21,14 @@ require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function() require'nvim-tree'.setup {} end
     }
+    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
 end)
 
 require('options')
 require('pluginconfig')
-
--- Colorscheme
-vim.cmd('colorscheme github_dark')
 
 -- Window navigation
 nnoremap('<C-J>', '<C-W><C-J>')
