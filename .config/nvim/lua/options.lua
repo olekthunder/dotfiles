@@ -13,3 +13,5 @@ o.cmdheight = 2
 o.updatetime = 300
 o.shortmess:append({c = true})
 o.signcolumn = "number"
+o.ignorecase = true
+o.smartcase = true

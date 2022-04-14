@@ -1,34 +1,49 @@
 local nnoremap = require('utils').nnoremap
 
-
 require('packer').startup(function(use)
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true },
         config = function() require('lualine').setup() end,
+        after = 'github-nvim-theme',
     }
     use {
         'projekt0n/github-nvim-theme',
          config = function() require('github-theme').setup() end,
     }
-    use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-    use 'nvim-treesitter/nvim-treesitter'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { 'nvim-lua/plenary.nvim' },
+        config = require('pluginconfig.telescope').setup,
+    }
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        config = require('pluginconfig.nvim-treesitter').setup,
+    }
     use 'neovim/nvim-lspconfig'
-    use 'williamboman/nvim-lsp-installer'
+    use {
+        'williamboman/nvim-lsp-installer',
+        config = require('pluginconfig.nvim-lsp-installer').setup,
+    }
     use 'simrat39/rust-tools.nvim'
     use {
-        'kyazdani42/nvim-tree.lua',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-        config = function() require'nvim-tree'.setup {} end
+        'hrsh7th/nvim-cmp',
+        config = require('pluginconfig.nvim-cmp').setup,
     }
-    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
     use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use 'powerman/vim-plugin-ruscmd'
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = { 'kyazdani42/nvim-web-devicons' },
+        config = require('pluginconfig.nvim-tree').setup,
+        after = 'github-nvim-theme',
+    }
 end)
 
+-- Neovim options configuration
 require('options')
-require('pluginconfig')
 
 -- Window navigation
 nnoremap('<C-J>', '<C-W><C-J>')
@@ -39,3 +54,4 @@ nnoremap('<C-Down>', '<C-W><C-J>')
 nnoremap('<C-Up>', '<C-W><C-K>')
 nnoremap('<C-Right>', '<C-W><C-L>')
 nnoremap('<C-Left>', '<C-W><C-H>')
+
