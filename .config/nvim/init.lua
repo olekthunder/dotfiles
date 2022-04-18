@@ -40,6 +40,7 @@ require('packer').startup(function(use)
         config = require('pluginconfig.nvim-tree').setup,
         after = 'github-nvim-theme',
     }
+    use 'airblade/vim-gitgutter'
 end)
 
 -- Neovim options configuration

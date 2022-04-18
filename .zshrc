@@ -1,22 +1,23 @@
 setopt extendedglob
 autoload -Uz compinit
-for dump in $ZDOTDIR/.zcompdump(N.mh+24); do
+for dump in $HOME/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
 unsetopt extendedglob
 
-HISTFILE=$ZDOTDIR/.zsh_history
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-source $ZDOTDIR/.zsh_aliases
+source $HOME/.zsh_aliases
 setopt NO_NOMATCH
 path+=("$HOME/.local/bin")
 eval "$(starship init zsh)"
-fpath=("$ZDOTDIR/completions/src" $fpath)
+fpath=("$HOME/completions/src" $fpath)
 bindkey  "^[[H"   beginning-of-line
 bindkey  "^[[F"   end-of-line
 bindkey  "^[[3~"  delete-char
 export GPG_TTY=$(tty)
 alias vim="nvim"
+eval "$(pyenv init -)"
