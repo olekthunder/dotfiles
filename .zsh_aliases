@@ -21,3 +21,5 @@ alias start='systemctl start'
 alias restart='systemctl restart'
 alias status='systemctl status'
 alias stop='systemctl stop'
+
+alias vim="nvim"

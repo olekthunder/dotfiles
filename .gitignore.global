@@ -80,3 +80,5 @@ venv.bak/
 
 # Fuck gapi client
 **/gapi_client.js
+
+**/.envrc
