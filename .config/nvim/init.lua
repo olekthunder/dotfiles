@@ -23,7 +23,6 @@ require('packer').startup(function(use)
     use 'neovim/nvim-lspconfig'
     use {
         'williamboman/nvim-lsp-installer',
-        config = require('pluginconfig.nvim-lsp-installer').setup,
     }
     use 'simrat39/rust-tools.nvim'
     use {
@@ -41,10 +40,15 @@ require('packer').startup(function(use)
         after = 'github-nvim-theme',
     }
     use 'airblade/vim-gitgutter'
+    use {
+        'jose-elias-alvarez/null-ls.nvim',
+        requires='nvim-lua/plenary.nvim',
+    }
 end)
 
 -- Neovim options configuration
 require('options')
+require('lsp').setup()
 
 -- Window navigation
 nnoremap('<C-J>', '<C-W><C-J>')
