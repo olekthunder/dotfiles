@@ -1,15 +1,13 @@
-local nnoremap = require("utils").nnoremap
-
-nnoremap("<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>")
-nnoremap("<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>")
-nnoremap("<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>")
-nnoremap("<leader>fh", "<cmd>lua require('telescope.builtin').help_tags()<cr>")
-
 local M = {}
 
 function M.setup()
-    require('telescope').setup{}
+    local map = require("utils").map
+    local telescope_builtin = require("telescope.builtin")
+    map("n", "<leader>ff", telescope_builtin.find_files)
+    map("n", "<leader>fg", telescope_builtin.live_grep)
+    map("n", "<leader>fb", telescope_builtin.buffers)
+    map("n", "<leader>fh", telescope_builtin.help_tags)
+    require('telescope').setup {}
 end
 
 return M
-
